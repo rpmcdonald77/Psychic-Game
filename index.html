@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Psychic-Game</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+  
+</head>
+
+<body>
+
+  <div class="container">
+
+  
+    <div class="jumbotron" style="background-color: rgb(0, 2, 128); color: white;">
+      <div class="container">
+        <h1 class="text-center">
+          <strong>Guess what letter I'm thinking of?</strong>
+        </h1>
+      </div>
+    </div>
+
+
+    <!-- Instructions -->
+    <div class="row">
+
+      <!-- Instructions Container -->
+      <div class="col-md-12">
+        <div class="card mb-4">
+          <div class="card-header">
+            <h3 class="card-title text-center">Instructions</h3>
+          </div>
+          <div class="card-body">
+            <p>
+              <large>Type a letter and see if it matches</large>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6">
+
+        <div class="card mb-4">
+          <div class="card-header">
+            <h3 class="card-title text-center">Your Guesses so far</h3>
+          </div>
+          <div class="card-body text-center">
+            <div id=guesses></div>
+          </div>
+        </div>
+
+      </div>
+    
+
+      <div class="col-md-6">
+
+        <div class="card mb-4">
+          <div class="card-header">
+            <h3 class="card-title text-center">Remaining Guesses</h3>
+          </div>
+          <div class="card-body text-center">
+           <div id=remaining></div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="card mb-4">
+          <div class="card-header">
+            <h3 class="card-title text-center">Win Count</h3>
+          </div>
+          <div class="card-body">
+            <div id=wins></div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="card mb-4">
+          <div class="card-header">
+            <h3 class="card-title text-center">Loss Count</h3>
+          </div>
+          <div class="card-body">
+            <div id=losses></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./game.js"></script>
+</body>
+
+</html>
